@@ -39,13 +39,13 @@ function ready() {
 
   //função de mensagem de finalização da compra, caso tenha itens no carrinho ou não.
   function makePurchase() {
-    const totalAmountNumber = parseFloat(totalAmount.replace(",", "."));
-
-    if (totalAmountNumber === "0") {
+    if (totalAmount == "0,00") {
       alert("Seu carrinho está vazio");
       return;
     }
   }
+
+
   //Função que remove produtos caso o valor do input seja zero.
   function checkInputIsNull(event) {
     console.log(event.target)
