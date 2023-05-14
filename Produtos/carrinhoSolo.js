@@ -46,7 +46,7 @@ function ready() {
       return;
     }
 
-
+}
     //Função que remove produtos caso o valor do input seja zero.
     function checkInputIsNull(event) {
       console.log(event.target)
