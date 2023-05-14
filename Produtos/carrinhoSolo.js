@@ -1,4 +1,3 @@
-
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoader", ready)
 } else {
