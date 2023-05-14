@@ -40,7 +40,7 @@ function ready() {
   //função de mensagem de finalização da compra, caso tenha itens no carrinho ou não.
   function makePurchase() {
     if (totalAmount == "0,00") {
-      alert("Seu carrinho está vazio");
+      alert("Seu carrinho está vazio")
       return;
     }
   }
