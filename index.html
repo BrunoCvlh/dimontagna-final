@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>DiMontagna</title>
+  <script src="./indexDocs/style-cabeçalho.css"></script>
+
+  <style>
+    html {
+      height: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      max-width: 100%;
+    }
+
+    footer {
+      max-width: 100%;
+      margin-top: auto;
+    }
+
+    #imagem-logo{
+      width: 50px;
+      height: 50px;
+    }
+
+    #botao-produtos{
+    cursor: pointer;
+    animation: infinite-scale 2s infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes infinite-scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+  }
+
+  :root {
+  --animate-duration: 2500ms;
+  --animate-delay: 5000ms;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <header class="bg-dark">
+    <nav class="navbar fixed-top" id="navbar-edit">
+      <div class="container-fluid" id="menu-id">
+        <a class="navbar-brand"><img src="./indexDocs/Logo-Transparente.png" id="imagem-logo"></a>
+        <button class="navbar-toggler border-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Produtos/carrinhoSolo.html">Produtos</a>
+              </li>
+              <li>
+                <a class="nav-link" href="/Contate/contate.html">Contate-nos</a>
+              </li>
+            </ul>
+            </li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!--Primeira imagem de background-->
+  <img src="./indexDocs/Novo-BG-Index.png" class="img-fluid">
+ 
+  <br>
+  <section>
+    <div class="container" id="primeiro-texto">
+      <figure class="text-center">
+        <p class="display-5">Seja bem-vindo ao melhor café da cidade!</p>
+    </div>
+    </figure>
+  </section>
+
+
+<!--Primeira div de texto com imagem-->
+  <div class="container px-4">
+    <div class="row">
+  <div class="col-lg-6 coll">
+      <p class="lead" style="line-height: 40px;">
+      Lorem ipsum dolor, sit amet consec. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et saepe rem dolorem exercitationem. Ipsam, dolor itaque. Ipsa doloremque, inventore eius libero magni quidem sed maiores! Totam aliquam praesentium perspiciatis.Lorem ipsum dolor, sit amet consec. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et saepe rem dolorem exercitationem. Ipsam, dolor itaque. Ipsa doloremque, inventore eius libero magni quidem sed maiores! Totam aliquam praesentium perspiciatis.</p>
+  </div>
+      <div class="col-lg-6 coll">
+      <img src="./indexDocs/safra-compresser.png"
+      class="img-fluid img-responsive rounded-pill shadow-lg p-1 mb-5 bg-body-tertiary rounded" id="cor-da-borda">
+  </div>
+</div>
+</div>
+
+
+
+<!--Segunda div de texto com imagem-->
+<div class="container px-4" id="segunda-div-txt-img">
+  <div class="row flex-row-reverse">
+    <div class="col-lg-6 coll text-align-center">
+      <p class="lead" style="line-height: 40px;">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corrupti fugit error libero tempore blanditiis delectus vero quis, est iste nulla laudantium et quidem expedita architecto repellat eaque mollitia recusandae. Lorem ipsum dolor, sit amet consec. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et saepe rem dolorem exercitationem. Ipsam, dolor itaque. Ipsa doloremque, inventore eius libero magni quidem sed maiores! Totam aliquam praesentium perspiciatis.Lorem ipsum dolor, sit amet consec. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et saepe rem dolorem exercitationem. Ipsam, dolor itaque. Ipsa doloremque, inventore eius libero magni quidem sed maiores! Totam aliquam praesentium perspiciatis.</p>
+  </div>
+    
+    <div class="col-lg-6 coll">
+      <img src="./indexDocs/Degustação-Responsivo (1).jpg"
+      class="img-fluid img-responsive rounded-pill shadow-lg p-1 mb-5 bg-body-tertiary rounded" id="cor-da-borda">
+  </div>
+</div>
+</div>
+</div>
+
+
+<!--Botão de ir ao catálogo de cafés e carrinho-->
+
+  <div class="container col mx-auto text-center">
+    <p class="lead text-center container">Quer conhecer nossos produtos?</p>
+    <a href="/Produtos/carrinhoSolo.html"><button type="button" id="botao-produtos" class="btn btn-outline-secondary mx-auto">Veja nosso catálogo</button></a>
+  </div>
+  <br>
+
+
+
+<!--Footer do site-->
+  <footer id="final-page" class="text-center text-white" style="background-color: #faf8f8;">
+    <!-- Grid container -->
+    <div class="container pt-2">
+      <!-- Section: Social media -->
+      <section class="mb-1">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/dimontagnacafe-101038288411398" role="button" data-mdb-ripple-color="dark"><i
+            class="fab fa-facebook-f"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/dimontagnacafe/"
+          role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Whatsapp -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://api.whatsapp.com/send?1=pt_BR&phone=5561992152755" role="button" data-mdb-ripple-color="dark"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <!-- Email -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:aviana2009@hotmail.com" role="button"
+          data-mdb-ripple-color="dark"><i class="fa-solid fa-at"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgb(80, 30, 30);">
+      
+      DiMontagna Café Gourmet
+    </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  </div>
+</div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/468e07f957.js" crossorigin="anonymous"></script>
+
+</html>

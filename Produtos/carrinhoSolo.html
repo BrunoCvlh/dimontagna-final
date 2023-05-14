@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarrinhoJS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+    <script src="carrinhoSolo.js" defer></script> <!--Utilizei o defer pois o async não deu muito certo com o site-->
+    <style>
+      html {
+        height: 100%;
+        min-height: 100%;
+      }
+  
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        max-width: 100%;
+      }
+  
+      footer {
+        max-width: 100%;
+        margin-top: auto;
+      }
+      #imagem-logo{
+      width: 50px;
+      height: 50px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark">
+      <nav class="navbar bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="./Logo-Transparente.png" id="imagem-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="carrinhoSolo.html">Produtos</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/Contate/contate.html">Contate-nos</a>
+                </li>
+              </ul>
+              </li>
+              </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Background Produtos-->
+   <img src="Backgrounds-1920.png" class="img-fluid">  
+   
+
+
+   
+
+    <!--texto antes dos produtos-->
+    <section>
+      <div class="container mt-1">
+        <figure class="text-center">
+          <p class="h3">Aqui você pode conferir nossos produtos.☕</p>
+          <p class="lead text-center container">Fique à vontade para escolher o que se adequa melhor ao seu paladar</p>
+      </div>
+      </figure>
+    </section>
+  
+    <!--cards dos produtos-->
+
+    <div class="row row-cols-1 row-cols-md-3 g-5 py-5 me-3 ms-3">
+      <div class="col">
+        <div class="card border border-2">
+          <img
+            src="café-vermelho.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Café Vermelho 500g</h5>
+            <p class="card-text">Grãos peneira 15 abaixo<br>Moído<br>Torra média mais intensa</p></p>
+            <p class="card-price">R$ 22,00 </p>
+            <button type="button" class="btn btn-outline-dark d-grid col-6
+              mx-auto">+carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-2">
+          <img
+            src="café-branco.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Café Branco 500g</h5>
+            <p class="card-text">Grãos peneira 15 abaixo<br>Moído<br>Torra média padrão</p>
+            <p class="card-price">R$ 22,00</p>
+            <button type="button" class="btn btn-outline-dark d-grid col-6
+              mx-auto">+carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-2">
+          <img
+            src="café-dourado.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Café Dourado 500g</h5>
+            <p class="card-text">Grãos peneira 16 acima <br>Moído<br>Torra média padrão</p>
+            <p class="card-price">R$ 28,00</p>
+            <button type="button" class="btn btn-outline-dark d-grid col-6
+              mx-auto">+carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-2">
+          <img
+            src="café-preto.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Café Preto 500g</h5>
+            <p class="card-text">Grãos peneira 16 acima <br>Em grãos<br>Torra média padrão</p>
+            <p class="card-price">R$ 28,00</p>
+            <button type="button" class="btn btn-outline-dark d-grid col-6
+              mx-auto">+carrinho</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-2">
+          <img
+            src="café-preto.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Café Preto 1Kg</h5>
+            <p class="card-text">Grãos peneira 16 acima <br>Em grãos<br>Torra média padrão</p>
+            <p class="card-price">R$ 54,00</p>
+            <button type="button" class="btn btn-outline-dark d-grid col-6
+              mx-auto">+carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br>
+
+
+    <!--Infos antes do resumo-->
+    <div>
+      <p class="lead text-center container">
+        Nossas entregas são feitas em Brasília-DF e entorno e estão sujeitas ao valor mínimo de R$ 44,00 juntamente com o
+        frete de R$ 7,00.<br> Escolha o pacote que deseja e faça seu pedido!
+      </p>
+    </div>
+
+    
+    <!--Carrinho de compras-->
+
+    <section class="h-100 h-custom" style="background-color: rgb(80, 30, 30);">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <div class="card card-registration card-registration-2"
+              style="border-radius: 15px;">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <div class="p-5-cart"><!--Primeiro Produto-->
+
+
+                      <div class="d-flex justify-content-between
+                        align-items-center mb-5">
+                        <h1 class="fw-bold mb-0 text-black ms-4 mt-2">Carrinho☕</h1>
+                      </div>
+
+                      <!--Primeiro Produto-->
+                      <!--
+                      <div class="cart-product">
+                        <div class="row mb-4 d-flex justify-content-between
+                          align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/143/549/products/lucca-torrefacao_mockup-blendnero-250g1-a6a9bec1f63d8a2c9816570382113580-640-0.webp"
+                              class="img-fluid rounded-3 ms-2" alt="Cotton
+                              T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted ms-2">Produto</h6>
+                            <h6 class="text-black mb-0 ms-2">Café Gourmet 500g</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input id="form1" min="0" name="quantity"
+                              value="1"
+                              type="number"
+                              class="form-control form-control-sm" />
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0 price ms-2">R$ 42,00</h6>
+                          </div>
+                          <div class="col-md-0 col-lg-1 col-xl-1 text-end">
+                            <button type="button" class="btn btn-dark
+                              button-remove me-4">Remover</button>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas
+                                fa-times"></i></a>
+                          </div>
+                        </div>
+                      </div>   -->
+                      <!--Segundo Produto-->
+                      <!-- <div class="cart-product">
+                        <div class="row mb-4 d-flex justify-content-between
+                          align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://28057.cdn.simplo7.net/static/28057/sku/cafe-kit-borges-cafe-gourmet-expresso-e-torrado-e-moido-250gr--p-1620401403836.jpeg"
+                              class="img-fluid rounded-3" alt="Cotton
+                              T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Produto</h6>
+                            <h6 class="text-black mb-0">Café Gourmet 1Kg</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                            <input id="form1" min="0" name="quantity"
+                              value="2"
+                              type="number"
+                              class="form-control form-control-sm" />
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0 price">R$ 47,10</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <button type="button" class="btn btn-dark
+                              button-remove">Remover</button>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas
+                                fa-times"></i></a>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+
+
+
+
+
+                  <!--Resumo do carrinho-->
+
+                  <div class="col-lg-4 bg-grey">
+                    <div class="p-5">
+                      <h3 class=" mb-5 mt-2 pt-1">Resumo</h3>
+                      <hr class="my-4">
+
+                      <div class="d-flex justify-content-between mb-4">
+                        <h5>Itens</h5>
+                        <span class="value-no-shipping">R$ 0,00</span>
+                      </div>
+
+                      <div class="d-flex justify-content-between mb-4">
+                        <h5>Frete</h5>
+                        <span class="value-shipping">R$ 7,00</span>
+                      </div>
+
+                      <hr class="my-4">
+
+                      <div class="d-flex justify-content-between mb-5">
+                        <h5>Total</h5>
+                        <span class="value-total">R$ 0,00</span>
+                      </div>
+
+                      <a href="../FormFinalizar/finalizar.html" type="button" class="btn btn-dark btn-block
+                        btn-lg"
+                        data-mdb-ripple-color="dark">Finalizar</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!--Footer-->
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-2">
+    <!-- Section: Social media -->
+    <section class="mb-1">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.facebook.com/dimontagnacafe-101038288411398" role="button" data-mdb-ripple-color="dark"><i
+          class="fab fa-facebook-f"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/dimontagnacafe/"
+        role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+      <!-- Whatsapp -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://api.whatsapp.com/send?1=pt_BR&phone=5561992152755" role="button" data-mdb-ripple-color="dark"><i
+          class="fa-brands fa-whatsapp"></i></a>
+      <!-- Email -->
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:aviana2009@hotmail.com" role="button"
+        data-mdb-ripple-color="dark"><i class="fa-solid fa-at"></i></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgb(80, 30, 30);">
+    DiMontagna Café Gourmet
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</div>
+    <!--Scripts do bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/468e07f957.js" crossorigin="anonymous"></script>
+  </body>
+
+</html>
