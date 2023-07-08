@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Formulário de compras</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="/js/formulario/formUserAPI.js" type="text/javascript" defer></script>
+<style>
+  #imagem-logo {
+    width: 50px;
+    height: 50px;
+  }
+</style>
+
+<body>
+
+  <!--Informe-->
+  <img class="ms-2 mt-2" src="/img/index/Logo-Transparente.png" id="imagem-logo">
+  <div class="container mt-4">
+    <h1 class="display-6">Preencha suas informações e endereço de entrega para prosseguir:</h1>
+  </div>
+
+
+  <!--Animação de carregamento-->
+
+
+
+  <!--Início do formulário-->
+  <form method="POST" class="container mt-4">
+    <!--Campos de dados pessoais-->
+    <div class="container mt-5 row g-3">
+        <div class="col-md-2">
+          <label for="inputEmail4" class="form-label">Nome</label>
+          <input type="text" class="form-control" aria-label="First name" name="name" required>
+        </div>
+        <div class="col-md-3">
+          <label for="inputEmail4" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" aria-label="Last name" name="sobrenome" required>
+        </div>
+        <div class="col-md-5">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="exemplo@exemplo.com" name="email" required>
+        </div>
+        <div class="col-md-2">
+          <label for="logradouro" class="form-label">Celular</label>
+          <input type="tel" maxlength="15" name="celular" onkeyup="handlePhone(event)" class="form-control" required/>
+        </div>
+        <!--Dados de endereço - conectados à API viaCEP-->
+        <div class="col-md-2">
+          <label for="cep" class="form-label">CEP</label>
+          <input name="cep" type="text" id="cep" name="cep" value="" size="10" maxlength="9"
+            onblur="pesquisacep(this.value);" class="form-control" onkeyup="handleZipCode(event)" required/></label>
+        </div>
+        <div class="col-md-4">
+          <label for="logradouro" class="form-label">Rua</label>
+          <input name="rua" type="text" name="rua" id="rua" size="60" class="form-control" required/></label>
+        </div>
+        <div class="col-md-4">
+          <label for="numero" class="form-label">Bairro</label>
+          <input type="text" name="bairro" class="form-control" id="bairro" required>
+        </div>
+        <div class="col-md-2">
+          <label for="numero" class="form-label">Número/Complemento</label>
+          <input type="text" name="numero" class="form-control" id="numeroComplemento" required>
+        </div>
+        <div class="col-md-4">
+          <label for="complemento" class="form-label">Cidade</label>
+          <input type="text" name="cidade" class="form-control" id="cidade" required> 
+        </div>
+        <div class="col-md-2">
+          <label for="estado" class="form-label">Estado</label>
+          <input type="text" name="estado" class="form-control" id="uf" required>
+          </select>
+        </div>
+
+        <!--Botão de enviar os dados-->
+        <div class="col-12 mt-5">
+          <button type="submit" class="btn btn-outline-secondary mx-auto justify-content-md-end">Enviar Dados e
+            prosseguir</button>
+        </div>
+    </div>
+  </form>
+    <br><br>
+</body>
+
+</html>
