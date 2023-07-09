@@ -1,0 +1,14 @@
+{
+    "name": "dimontagna-final",
+    "version": 2,
+    "public": true,
+    "build": {
+        "src": "server.js",
+        "use":"@vercel/node"
+    },
+    "routes":{
+        "src":"/(.*)",
+        "dest": "server.js"
+    }
+
+}
