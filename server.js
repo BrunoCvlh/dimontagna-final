@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 
 const employeeRoute = require('./routes/employee')
 
-mongoose.connect('mongodb://127.0.0.1:27017/dimontagna-form', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://bruno:gJDRvIJxZL1TntWm@dimontagna.qrrsmct.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
 
 db.on('error', (err) => {
